@@ -1,0 +1,23 @@
+---
+title: "Tilla analysis"
+output: html_notebook
+---
+
+Filtering data to know the level of NA values in the data. The result is stored in Tilla_NA_values
+
+```{r}
+library(tidyverse)
+#importation of the data
+data <- read.delim("data/TILLA_Climate_data.txt")
+head
+```
+
+```{r}
+#Count the NA values per colum
+table(is.na(data))
+```
+
+```{r}
+#Percentage of NA values [15.79 %]
+35180/(187630+35180)
+```

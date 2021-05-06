@@ -1,0 +1,31 @@
+{
+    "id": "85BC9576",
+    "path": "C:/Users/Simon Pierre KITEGI/Desktop/Glory_Project/Tilla-analysis.Rmd",
+    "project_path": "Tilla-analysis.Rmd",
+    "type": "r_markdown",
+    "hash": "1378437874",
+    "contents": "",
+    "dirty": false,
+    "created": 1620288230158.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "tempName": "Untitled2",
+        "chunk_output_type": "inline",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "20,32",
+        "scrollLine": "0",
+        "rmdVisualWrapConfigured": "true",
+        "docOutlineVisible": "0",
+        "rmdVisualModeLocation": "352:520"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1620289356,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1620289356197,
+    "read_only": false,
+    "read_only_alternatives": []
+}
