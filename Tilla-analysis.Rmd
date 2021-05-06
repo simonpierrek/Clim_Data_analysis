@@ -1,6 +1,8 @@
 ---
 title: "Tilla analysis"
-output: html_notebook
+output:
+  word_document: default
+  html_notebook: default
 ---
 
 Filtering data to know the level of NA values in the data. The result is stored in Tilla_NA_values
@@ -13,8 +15,15 @@ head
 ```
 
 ```{r}
-#Count the NA values per colum
-table(is.na(data))
+#Count the NA values per column
+
+for (i in unique(data$year)) {
+  x <- table(is.na(filter(data, year == i)))
+  print(i)
+  print(x)
+}
+
+
 ```
 
 ```{r}
