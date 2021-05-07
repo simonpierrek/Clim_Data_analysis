@@ -1,20 +1,30 @@
 ---
 title: "Tilla analysis"
-output: html_notebook
+output:
+  word_document: default
+  html_notebook: default
 ---
 
 Filtering data to know the level of NA values in the data. The result is stored in Tilla_NA_values
 
 ```{r}
-library(tidyverse)
+library(dplyr)
+library(lubridate)
 #importation of the data
-data <- read.delim("data/TILLA_Climate_data.txt")
+data <- read.delim("data/Climate_data_Niamey.txt")
 head
 ```
 
 ```{r}
-#Count the NA values per colum
-table(is.na(data))
+#Count the NA values per column
+
+for (i in unique(year(data$year))) {
+  x <- table(is.na(filter(data, year(year) == i)))
+  print(i)
+  print(x)
+}
+
+#unique(lubridate::year(data$year))
 ```
 
 ```{r}
